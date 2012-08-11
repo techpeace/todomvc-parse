@@ -72,7 +72,7 @@ $(function() {
 			}
 		},
 
-		// Remove the item, destroy the model from *localStorage* and delete its view.
+		// Remove the item, destroy the model from Parse and delete its view.
 		clear: function() {
 			this.model.destroy();
 		}

@@ -25,7 +25,7 @@ $(function( $ ) {
 
 		// At initialization we bind to the relevant events on the `Todos`
 		// collection, when items are added or changed. Kick things off by
-		// loading any preexisting todos that might be saved in *localStorage*.
+		// loading any preexisting todos that might be saved on Parse.
 		initialize: function() {
 			this.input = this.$('#new-todo');
 			this.allCheckbox = this.$('#toggle-all')[0];
@@ -102,7 +102,7 @@ $(function( $ ) {
 		},
 
 		// If you hit return in the main input field, create new **Todo** model,
-		// persisting it to *localStorage*.
+		// persisting it to Parse.
 		createOnEnter: function( e ) {
 			if ( e.which !== ENTER_KEY || !this.input.val().trim() ) {
 				return;
